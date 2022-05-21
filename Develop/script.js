@@ -6,7 +6,7 @@ const specials = '!@#$%^&*()_;<>?":;=+{}[]/~`-.,';
 
 
 
-  //password length prompt
+  //password length and parameters prompt
  var lenPass = window.prompt("How long should your password be? Enter a number between 8 and 25");
  var lowercase = window.confirm("Would you like lowercase letters?");
  var uppercase = window.confirm("Would you like uppercase letters?");
@@ -16,6 +16,7 @@ const specials = '!@#$%^&*()_;<>?":;=+{}[]/~`-.,';
  console.log(lenPass);
   console.log(lowercase, uppercase, number, symbols);
 
+  //create array based on user responses
   const newArray = [];
 if (lenPass > 8 && lenPass < 25) {
   
@@ -36,7 +37,7 @@ if (lenPass > 8 && lenPass < 25) {
   };
 
 
-//let password = '';
+//create password from user response array
 function createPassword() {
   let password = newArray.join("");
   console.log(password);
@@ -46,11 +47,12 @@ function createPassword() {
  
   let newPassword = [];
 
+//random selection of characters for password
      for (var i = 0; i < lenWord; i++) {
          var myPassword = password[Math.floor(Math.random() * password.length)];
          newPassword.push(myPassword);
          console.log(myPassword);
-         //myPassword += password.substring(rpass, rpass +1);
+        
    }
    let outputPass = newPassword.join('');
    var passwordText = document.querySelector("#password");
