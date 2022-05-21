@@ -17,4 +17,4 @@ In order to use the application go to the live deployed link for the application
 Brittany B
 
 ## Questions
-Contact me on githun
+Contact me on github
