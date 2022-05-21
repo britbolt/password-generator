@@ -9,7 +9,7 @@ This application allows the user to generate a random unique password that conta
 - Javascript
 
 ## Usage
-In order to use the application go to the live deployed link for the application and respond to the prompts.
+In order to use the application go to the live deployed link for the application and respond to the prompts. You can find it here: https://britbolt.github.io/password-generator/
 
 ![screenshot showing example of password generation](/Develop/assets/images/screenshot-sample-password.jpg)
 
